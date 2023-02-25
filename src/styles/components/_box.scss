@@ -1,0 +1,9 @@
+.c-box {
+  padding: 1rem;
+  box-shadow: 2px 3px 6px #aaa;
+  transition: 300ms;
+}
+
+.c-box:has(a):hover {
+  transform: translateY(-10px);
+}

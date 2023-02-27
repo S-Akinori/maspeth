@@ -48,42 +48,33 @@
         </div>
       </div>
       <div class="p-top-service__contents flex flex-wrap">
-        <div class="p-top-service__contents__item relative md:w-1/3 aspect-square">
-          <div class="p-top-service__contents__item__image absolute top-0 left-0 w-full h-full"><img class="w-full h-full object-cover" src="<?= get_template_directory_uri(); ?>/assets/images/service1.png" alt=""></div>
-          <div class="p-top-service__contents__item__image__text relative p-4">
-            <h3 class="text-main">日用雑貨販売</h3>
-            <p>「あったらいいな」と思う商品を販売しております。お店では見られないユニークかつ画期的な日用雑貨がそろっております。</p>
+        <div class="p-4 md:w-1/3">
+          <div class="p-top-service__contents__item relative aspect-square">
+            <div class="p-top-service__contents__item__image absolute top-0 left-0 w-full h-full"><img class="w-full h-full object-cover" src="<?= get_template_directory_uri(); ?>/assets/images/service1.png" alt=""></div>
+            <div class="p-top-service__contents__item__image__text relative p-4">
+              <h3 class="text-main">日用雑貨販売</h3>
+              <p>「あったらいいな」と思う商品を販売しております。お店では見られないユニークかつ画期的な日用雑貨がそろっております。</p>
+            </div>
           </div>
         </div>
-        <div class="p-top-service__contents__item relative md:w-1/3 aspect-square">
-          <div class="p-top-service__contents__item__image absolute top-0 left-0 w-full h-full"><img class="w-full h-full object-cover" src="<?= get_template_directory_uri(); ?>/assets/images/service2.jpg" alt=""></div>
-          <div class="p-top-service__contents__item__image__text relative p-4">
-            <h3 class="text-main">エステ事業</h3>
-            <p>「オールハンドによる究極の癒しエステ」を開いています。機械ではなく手で行うことでお客様ごとに最適な施術を実現できます。</p>
+        <div class="p-4 md:w-1/3">
+          <div class="p-top-service__contents__item relative aspect-square">
+            <div class="p-top-service__contents__item__image absolute top-0 left-0 w-full h-full"><img class="w-full h-full object-cover" src="<?= get_template_directory_uri(); ?>/assets/images/service5.jpg" alt=""></div>
+            <div class="p-top-service__contents__item__image__text relative p-4">
+              <h3 class="text-main">水素吸引機販売</h3>
+              <p>どこでも持ち運べるに特化した水素吸引機を販売しております。簡単で使いやすく、体の調子を整えられる機械です。</p>
+            </div>
           </div>
         </div>
-        <div class="p-top-service__contents__item relative md:w-1/3 aspect-square">
-          <div class="p-top-service__contents__item__image absolute top-0 left-0 w-full h-full"><img class="w-full h-full object-cover" src="<?= get_template_directory_uri(); ?>/assets/images/service3.jpg" alt=""></div>
-          <div class="p-top-service__contents__item__image__text relative p-4">
-            <h3 class="text-main">法人向けの社会保険の削減のコンサル</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <div class="p-4 md:w-1/3">
+          <div class="p-top-service__contents__item relative p-top-service__contents__item--main3 aspect-square">
+            <div class="p-top-service__contents__item__image absolute top-0 left-0 w-full h-full"><img class="w-full h-full object-cover" src="<?= get_template_directory_uri(); ?>/assets/images/service2.jpg" alt=""></div>
+            <div class="p-top-service__contents__item__image__text relative p-4">
+              <h3 class="text-main3">エステ事業</h3>
+              <p>「オールハンドによる究極の癒しエステ」を開いています。機械ではなく手で行うことでお客様ごとに最適な施術を実現できます。</p>
+            </div>
           </div>
         </div>
-        <div class="p-top-service__contents__item relative md:w-1/3 aspect-square">
-          <div class="p-top-service__contents__item__image absolute top-0 left-0 w-full h-full"><img class="w-full h-full object-cover" src="<?= get_template_directory_uri(); ?>/assets/images/service4.jpg" alt=""></div>
-          <div class="p-top-service__contents__item__image__text relative p-4">
-            <h3 class="text-main">商用車向けの自動運転のシステム</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </div>
-        <div class="p-top-service__contents__item relative md:w-1/3 aspect-square">
-          <div class="p-top-service__contents__item__image absolute top-0 left-0 w-full h-full"><img class="w-full h-full object-cover" src="<?= get_template_directory_uri(); ?>/assets/images/service5.jpg" alt=""></div>
-          <div class="p-top-service__contents__item__image__text relative p-4">
-            <h3 class="text-main">水素吸引機販売</h3>
-            <p>どこでも持ち運べるに特化した水素吸引機を販売しております。簡単で使いやすく、体の調子を整えられる機械です。</p>
-          </div>
-        </div>
-      </div>
     </section>
   </div>
   <div id="topEC" class="p-top-service c-page-section">
@@ -94,8 +85,8 @@
           <h2 class="c-title-text__title u-text-center">日用雑貨</h2>
         </div>
         <div class="c-title-text__text u-text-center c-fade-in">
-          <p>日常生活に「あったらいいな」と思うようなものを販売しております。</p>
-          <p>特許取得済なので、ユニークかつ効果の期待できる、そして他では手に入りづらい商品がそろっております。</p>
+          <p>Nexusは皆様の心を惹きつける日用雑貨(あったらいいな)をテーマにした、全く新しい発想と企画で何処にもない、オリジナルティーをテーマに(1部特許取得済)商品群です。</p>
+          <p>1度手にしたら必ず欲しくなるような、効果絶大な商品です。是非1度ご覧下さい。</p>
         </div>
       </div>
       <div class="flex flex-wrap">
@@ -167,6 +158,7 @@
         <div class="c-title-text__text u-text-center">
           <p>麻布十番に構えるエステでは機械を使わないオールハンドによる施術を行っています。</p>
           <p>お客様一人ひとりに向き合い、各々に最適な施術を行うことで美しさと癒しをご提供します。</p>
+          <p>是非疲れた身体と心を癒やしに来て下さい。</p>
         </div>
       </div>
       <div class="text-center"><a href="https://beauty.nexus81.com" target="_blank" class="c-button">エステについて</a></div>

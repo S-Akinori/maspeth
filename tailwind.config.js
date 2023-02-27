@@ -12,6 +12,7 @@ module.exports = {
       'base-cont': '#222',
       'main': '#197DBB',
       'main2': '#197DBB',
+      'main3': '#ffc0cb',
       'main-light': '#4BAAE0',
       'main-cont': '#F6F6F6',
       'main-cont2': '#222',

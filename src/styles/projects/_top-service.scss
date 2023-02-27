@@ -1,3 +1,13 @@
+@use '../global/' as g;
+
+.p-top-service__contents__item {
+  border: 2px solid g.$main_color;
+}
+
+.p-top-service__contents__item--main3 {
+  border-color: g.$main_color3;
+}
+
 .p-top-service__contents__item__image::before {
   content: '';
   position: absolute;

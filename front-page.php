@@ -72,6 +72,7 @@
             <div class="p-top-service__contents__item__image__text relative p-4">
               <h3 class="text-main3">エステ事業</h3>
               <p>「オールハンドによる究極の癒しエステ」を開いています。機械ではなく手で行うことでお客様ごとに最適な施術を実現できます。</p>
+              <div class="mt-4"><a href="https://beauty.nexus81.com" target="_blank" class="c-button c-button--main3">エステNEXUSへ</a></div>
             </div>
           </div>
         </div>
@@ -161,7 +162,7 @@
           <p>是非疲れた身体と心を癒やしに来て下さい。</p>
         </div>
       </div>
-      <div class="text-center"><a href="https://beauty.nexus81.com" target="_blank" class="c-button">エステについて</a></div>
+      <div class="text-center"><a href="https://beauty.nexus81.com" target="_blank" class="c-button">エステNEXUSへ</a></div>
     </section>
   </div>
   <div id="topBlog" class="c-page-section c-container relative">

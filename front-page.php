@@ -19,8 +19,8 @@
       <div class="p-top-fv__owner__image">
         <img src="<?= get_template_directory_uri(); ?>/assets/images/owner.jpg" width="200" height="200" alt="松本 萌夏" />
       </div>
-      <div class="p-top-fv__owner__name">
-        
+      <div class="p-top-fv__owner__name text-center text-white">
+        代表取締役社長 / 松本 萌夏
       </div>
     </div>
   </div>

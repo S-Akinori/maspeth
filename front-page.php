@@ -94,7 +94,7 @@
       <div class="flex flex-wrap">
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
-            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur2.pdf" target="_blank" class="block">
+            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur1.pdf" target="_blank" class="block">
               <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product5.png" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">ZEROスノー</h3>
@@ -105,7 +105,7 @@
         </div>
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
-            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur3.pdf" target="_blank" class="block">
+            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur2.pdf" target="_blank" class="block">
               <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product1.jpeg" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">リガー</h3>
@@ -138,7 +138,7 @@
         </div>
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
-            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur4.pdf" target="_blank" class="block">
+            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur5.pdf" target="_blank" class="block">
               <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product4.png" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">リバリー</h3>

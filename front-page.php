@@ -94,7 +94,18 @@
       <div class="flex flex-wrap">
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
-            <a href="/" class="block">
+            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur2.pdf" target="_blank" class="block">
+              <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product5.png" alt=""></div>
+              <div class="relative">
+                <h3 class="mb-0 text-main">ZEROスノー</h3>
+                <p>雨水を循環し、雪を積もらせない雪下ろし機です。毎度業者に頼む費用を抑えたり積雪による事故防止にもつながります。</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 c-fade-in">
+          <div class="c-box h-full">
+            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur3.pdf" target="_blank" class="block">
               <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product1.jpeg" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">リガー</h3>
@@ -105,7 +116,7 @@
         </div>
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
-            <a href="/" class="block">
+            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur3.pdf" target="_blank" class="block">
               <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product2.png" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">オルクリン</h3>
@@ -116,7 +127,7 @@
         </div>
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
-            <a href="/" class="block">
+            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur4.pdf" target="_blank" class="block">
               <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product3.png" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">匠-Takumi-</h3>
@@ -127,22 +138,11 @@
         </div>
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
-            <a href="/" class="block">
+            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur4.pdf" target="_blank" class="block">
               <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product4.png" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">リバリー</h3>
                 <p>丈夫で盗難対策もできる置き配ボックスです。持ち運びもしやすく災害時のバッグとしても重宝します。</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3 c-fade-in">
-          <div class="c-box h-full">
-            <a href="/" class="block">
-              <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product5.png" alt=""></div>
-              <div class="relative">
-                <h3 class="mb-0 text-main">ZEROスノー</h3>
-                <p>雨水を循環し、雪を積もらせない雪下ろし機です。毎度業者に頼む費用を抑えたり積雪による事故防止にもつながります。</p>
               </div>
             </a>
           </div>

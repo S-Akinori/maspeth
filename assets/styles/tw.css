@@ -641,6 +641,10 @@ video {
   justify-content: space-between;
 }
 
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }

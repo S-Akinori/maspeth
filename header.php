@@ -35,7 +35,7 @@
             </ul>
           </nav>
         </div>
-        <a href="" class="c-button c-button--main-cont text-sm">お問い合わせ</a>
+        <a href="#topContact" class="c-button c-button--main-cont text-sm js-anchorLink">お問い合わせ</a>
         <div class="lg:hidden pl-2">
           <button class="js-menu-button flex items-center justify-center">
             <span class="material-icons">
@@ -62,7 +62,7 @@
         </ul>
       </nav>
       <div class="text-center">
-        <a href="" class="c-button c-button--main-cont">お問い合わせ</a>
+        <a href="#topContact" class="c-button c-button--main-cont js-anchorLink">お問い合わせ</a>
       </div>
     </div>
   </div>

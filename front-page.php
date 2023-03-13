@@ -64,6 +64,7 @@
             <div class="p-top-service__contents__item__image__text relative p-4">
               <h3 class="text-main">水素吸引機販売</h3>
               <p>どこでも持ち運べるに特化した水素吸引機を販売しております。簡単で使いやすく、体の調子を整えられる機械です。</p>
+              <div class="mt-4"><a href="<?= get_template_directory_uri(); ?>/assets/images/future-health.pdf" target="_blank" class="c-button">資料はこちら</a></div>
             </div>
           </div>
         </div>
@@ -73,13 +74,13 @@
             <div class="p-top-service__contents__item__image__text relative p-4">
               <h3 class="text-main3">エステ事業</h3>
               <p>「オールハンドによる究極の癒しエステ」を開いています。機械ではなく手で行うことでお客様ごとに最適な施術を実現できます。</p>
-              <div class="mt-4"><a href="https://beauty.nexus81.com" target="_blank" class="c-button c-button--main3">エステNEXUSへ</a></div>
+              <div class="mt-4"><a href="https://beauty.nexus81.com" target="_blank" class="c-button c-button--main3">Aesthetic Salon NEXUSへ</a></div>
             </div>
           </div>
         </div>
     </section>
   </div>
-  <div id="topEC" class="p-top-service c-page-section">
+  <div id="topGoods" class="p-top-service c-page-section">
     <section>
       <div class="c-title-text mb-8">
         <div class="text-center c-fade-in">
@@ -95,7 +96,7 @@
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
             <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur1.jpg" target="_blank" class="block">
-              <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product5.png" alt=""></div>
+              <div><img class="mx-auto" src="<?= get_template_directory_uri(); ?>/assets/images/product5.png" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">ZEROスノー</h3>
                 <p>雨水を循環し、雪を積もらせない雪下ろし機です。毎度業者に頼む費用を抑えたり積雪による事故防止にもつながります。</p>
@@ -106,7 +107,7 @@
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
             <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur2.jpg" target="_blank" class="block">
-              <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product1.jpeg" alt=""></div>
+              <div><img class="mx-auto" src="<?= get_template_directory_uri(); ?>/assets/images/product1.jpeg" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">リガー</h3>
                 <p>ビニール袋や紙類が上手にめくれる除菌保湿剤</p>
@@ -117,7 +118,7 @@
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
             <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur3.jpg" target="_blank" class="block">
-              <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product2.png" alt=""></div>
+              <div><img class="mx-auto" src="<?= get_template_directory_uri(); ?>/assets/images/product2.png" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">オルクリン</h3>
                 <p>洗浄、除菌、消臭がこれ１本でできる洗剤です。食器、洋服、床などさまざまな用途にも使えます。</p>
@@ -128,7 +129,7 @@
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
             <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur4.jpg" target="_blank" class="block">
-              <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product3.png" alt=""></div>
+              <div><img class="mx-auto" src="<?= get_template_directory_uri(); ?>/assets/images/product3.png" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">匠-Takumi-</h3>
                 <p>水分を通さず丈夫な生地でできたエコバッグです。小型ケースと一体型になっており、たたむと胸ポケットに入るほどコンパクトになります。</p>
@@ -139,7 +140,7 @@
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
             <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur5.jpg" target="_blank" class="block">
-              <div><img src="<?= get_template_directory_uri(); ?>/assets/images/product4.png" alt=""></div>
+              <div><img class="mx-auto" src="<?= get_template_directory_uri(); ?>/assets/images/product4.png" alt=""></div>
               <div class="relative">
                 <h3 class="mb-0 text-main">リバリー</h3>
                 <p>丈夫で盗難対策もできる置き配ボックスです。持ち運びもしやすく災害時のバッグとしても重宝します。</p>
@@ -164,10 +165,10 @@
           <p>是非疲れた身体と心を癒やしに来て下さい。</p>
         </div>
       </div>
-      <div class="text-center"><a href="https://beauty.nexus81.com" target="_blank" class="c-button">エステNEXUSへ</a></div>
+      <div class="text-center"><a href="https://beauty.nexus81.com" target="_blank" class="c-button">Aesthetic Salon NEXUS</a></div>
     </section>
   </div>
-  <div id="topBlog" class="c-page-section c-container relative">
+  <div id="topNews" class="c-page-section c-container relative">
     <section>
       <div class="c-title-text c-fade-in">
         <div class="text-center">
@@ -189,7 +190,7 @@
       </div>
     </section>
   </div>
-  <div id="topContact" class="c-page-section c-container relative">
+  <div id="topCompany" class="c-page-section c-container relative">
     <section>
       <div class="c-title-text c-fade-in">
         <div class="text-center">
@@ -203,56 +204,72 @@
           <h3 class="text-main">株式会社NEXUS</h3>
           <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-40 pr-4">代表</div>
-            <div>松本 萌夏</div>
+            <div class="">松本 萌夏</div>
           </div>
           <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-40 pr-4">電話番号</div>
-            <div>0463-59-6797</div>
+            <div class="">0463-59-6797</div>
           </div>
           <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-40 pr-4">メールアドレス</div>
-            <div>info@nexus81.com</div>
+            <div class="">info@nexus81.com</div>
           </div>
           <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-40 pr-4">住所</div>
-            <div>神奈川県平塚市岡崎3927-9</div>
+            <div class="">
+              〒259-1212 <br />
+              神奈川県平塚市岡崎3927-9
+            </div>
           </div>
           <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-40 pr-4">営業時間</div>
-            <div>平日：11:00～18:00</div>
+            <div class="">平日：9:00〜18:00</div>
+          </div>
+          <div class="md:flex mb-4 pb-4 border-b border-main">
+            <div class="w-40 pr-4">定休日</div>
+            <div class="">土曜、日曜、祝日</div>
           </div>
         </div>
       </div>
     </section>
   </div>
-  <div id="topContact" class="c-page-section c-container relative">
+  <div class="c-page-section c-container relative">
     <section>
     <div class="md:flex">
         <div class="md:w-1/2 mb-4 md:mb-0 md:px-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.948308359583!2d139.7328464152152!3d35.65364518020082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ba1b13b8ded%3A0xaa439db0345efd4a!2z44CSMTA2LTAwNDUgVG9reW8sIE1pbmF0byBDaXR5LCBBemFidWrFq2JhbiwgMy1jaMWNbWXiiJI34oiSNSDjg57jgrnjgrPjg5Pjg6vpurvluIPlvJDnlarppKggMzAx!5e0!3m2!1sen!2sjp!4v1677480582714!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <div class="md:w-1/2 md:px-4">
-          <h3 class="text-main">エステNEXUS</h3>
+          <h3 class="text-main">Aesthetic Salon NEXUS</h3>
           <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-32 pr-4">代表</div>
-            <div>松本 萌夏</div>
+            <div class="">松本 萌夏</div>
           </div>
           <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-32 pr-4">電話番号</div>
-            <div>080-7400-9710</div>
+            <div class="">080-7400-9710</div>
           </div>
           <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-32 pr-4">HP</div>
-            <div><a href="https://beauty.nexus81.com" target="_blank">https://beauty.nexus81.com</a></div>
+            <div class=""><a href="https://beauty.nexus81.com" target="_blank">https://beauty.nexus81.com</a></div>
           </div>
           <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-32 pr-4">住所</div>
-            <div>
+            <div class="">
               〒106-0045<br />
-              東京都港区麻布十番3丁目7-5 マスコビル弐番館301号室
+              東京都港区麻布十番3丁目7-5
             </div>
           </div>
           <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-32 pr-4">営業時間</div>
-            <div>11:00～18:00</div>
+            <div class="">
+              平日 : 11:00~19:00 (ラスト18:00)<br />
+              土日 : 11:00~18:00 (ラスト17:00)
+            </div>
+          </div>
+          <div class="md:flex mb-4 pb-4 border-b border-main">
+            <div class="w-32 pr-4">定休日</div>
+            <div class="">
+              月曜、水曜
+            </div>
           </div>
           <!-- <div class="md:flex mb-4 pb-4 border-b border-main">
             <div class="w-32 pr-4">定休日</div>

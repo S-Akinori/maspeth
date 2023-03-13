@@ -62,7 +62,7 @@
         </ul>
       </nav>
       <div class="text-center">
-        <a href="#topContact" class="c-button c-button--main-cont js-anchorLink">お問い合わせ</a>
+        <a href="#topContact" class="c-button c-button--main-cont js-anchorLink js-menu-button">お問い合わせ</a>
       </div>
     </div>
   </div>

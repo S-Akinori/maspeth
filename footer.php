@@ -19,7 +19,7 @@
         〒259-1212 <br />
         神奈川県平塚市岡崎3927-9
       </div>
-      <div class="text-center md:text-left mb-4"><a href="#topContact" class="c-button c-button--main-cont js-anchorLink">お問い合わせ</a></div>      
+      <!-- <div class="text-center md:text-left mb-4"><a href="#topContact" class="c-button c-button--main-cont js-anchorLink">お問い合わせ</a></div>       -->
     </div>
     <div class="text-center text-xs md:text-left">&copy;2023 株式会社NEXUS</div>
   </div>

@@ -4,6 +4,11 @@
     'numberposts ' => 4,
   );
   $posts = get_posts($args);
+
+  $products = get_posts(array(
+    'post_type' => 'products',
+    'posts_per_page' => -1,
+  ));
 ?>
   <div class="p-top-fv c-fv relative">
     <div class="p-top-fv__image active c-fv__image">
@@ -93,61 +98,19 @@
         </div>
       </div>
       <div class="flex flex-wrap">
+        <?php foreach($products as $post): setup_postdata($post); ?>
         <div class="p-4 md:w-1/3 c-fade-in">
           <div class="c-box h-full">
-            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur1.jpg" target="_blank" class="block">
-              <div><img class="mx-auto" src="<?= get_template_directory_uri(); ?>/assets/images/product5.png" alt=""></div>
+            <a href="<?php the_field('link'); ?>" target="_blank" class="block">
+              <div><img class="mx-auto" src="<?= get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></div>
               <div class="relative">
-                <h3 class="mb-0 text-main">ZEROスノー</h3>
-                <p>雨水を循環し、雪を積もらせない雪下ろし機です。毎度業者に頼む費用を抑えたり積雪による事故防止にもつながります。</p>
+                <h3 class="mb-0 text-main"><?php the_title(); ?></h3>
+                <p><?php the_excerpt(); ?></p>
               </div>
             </a>
           </div>
         </div>
-        <div class="p-4 md:w-1/3 c-fade-in">
-          <div class="c-box h-full">
-            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur2.jpg" target="_blank" class="block">
-              <div><img class="mx-auto" src="<?= get_template_directory_uri(); ?>/assets/images/product1.jpeg" alt=""></div>
-              <div class="relative">
-                <h3 class="mb-0 text-main">リガー</h3>
-                <p>ビニール袋や紙類が上手にめくれる除菌保湿剤</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3 c-fade-in">
-          <div class="c-box h-full">
-            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur3.jpg" target="_blank" class="block">
-              <div><img class="mx-auto" src="<?= get_template_directory_uri(); ?>/assets/images/product2.png" alt=""></div>
-              <div class="relative">
-                <h3 class="mb-0 text-main">オルクリン</h3>
-                <p>洗浄、除菌、消臭がこれ１本でできる洗剤です。食器、洋服、床などさまざまな用途にも使えます。</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3 c-fade-in">
-          <div class="c-box h-full">
-            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur4.jpg" target="_blank" class="block">
-              <div><img class="mx-auto" src="<?= get_template_directory_uri(); ?>/assets/images/product3.png" alt=""></div>
-              <div class="relative">
-                <h3 class="mb-0 text-main">匠-Takumi-</h3>
-                <p>水分を通さず丈夫な生地でできたエコバッグです。小型ケースと一体型になっており、たたむと胸ポケットに入るほどコンパクトになります。</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3 c-fade-in">
-          <div class="c-box h-full">
-            <a href="<?= get_template_directory_uri(); ?>/assets/images/brochur5.jpg" target="_blank" class="block">
-              <div><img class="mx-auto" src="<?= get_template_directory_uri(); ?>/assets/images/product4.png" alt=""></div>
-              <div class="relative">
-                <h3 class="mb-0 text-main">リバリー</h3>
-                <p>丈夫で盗難対策もできる置き配ボックスです。持ち運びもしやすく災害時のバッグとしても重宝します。</p>
-              </div>
-            </a>
-          </div>
-        </div>
+        <?php endforeach; wp_reset_postdata(); ?>
       </div>
       <div class="mt-4 text-center"><a href="https://nexus-109946.square.site" target="_blank" class="c-button">オンラインショップへ</a></div>
     </section>

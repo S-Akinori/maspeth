@@ -33,7 +33,7 @@
 <body>
   <header class="header">
     <div class="flex justify-between items-center">
-      <div class="c-logo"><a href="<?= home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpg" alt="株式会社NEXUS"></a></div>
+      <div class="c-logo"><a href="<?= home_url(); ?>"><img src="<?= get_option('company0_logo'); ?>" alt="株式会社NEXUS"></a></div>
       <div class="flex items-center">
         <div class="hidden lg:block">
           <nav>

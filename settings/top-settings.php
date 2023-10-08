@@ -18,8 +18,8 @@ function site_settings_page() {
   ?>
 <form method="post" action="options.php" enctype="multipart/form-data" encoding="multipart/form-data">
 <?php
-settings_fields('top-settigns');
-do_settings_sections('top-settigns');
+settings_fields('top-settings');
+do_settings_sections('top-settings');
 submit_button();
 ?>
 <table class="form-table setting-table">
@@ -34,8 +34,8 @@ submit_button();
 			<textarea name="theme_option_head_script_source" id="theme_option_head_script_source" class="large-text code" rows="12"><?php echo esc_textarea( get_option( 'theme_option_head_script_source' ) ); ?></textarea></td>
 	</tr> -->
 	<tr>
-		<th scope="row"><label for="top_fv_image1">トップ画像</label></th>
-		<td><?php generate_upload_image_tag('top_fv_image1', get_option('top_fv_image1'));?></td>
+		<th scope="row"><label for="top_fv_image">トップ画像</label></th>
+		<td><?php generate_upload_image_tag('top_fv_image', get_option('top_fv_image'));?></td>
 	</tr>
   <tr>
 		<th><label for="top_message_en">メッセージ英語</label></th>
@@ -69,82 +69,82 @@ submit_button();
 	</tr>
   <?php for($i=0; $i < 3; $i++): ?>
   <tr>
-    <th><label for="top_service[<?= $i;?>][title]">サービス<?= $i+1;?> タイトル</label></th>
-    <td colspan="2"><input name="top_service[<?= $i;?>][title]" type="text" id="top_service[<?= $i;?>][title]" value="<?= get_option('top_service')[$i]['title']; ?>" class="regular-text" /></td>
+    <th><label for="top_services[<?= $i;?>][title]">サービス<?= $i+1;?> タイトル</label></th>
+    <td colspan="2"><input name="top_services[<?= $i;?>][title]" type="text" id="top_services[<?= $i;?>][title]" value="<?= get_option('top_services')[$i]['title']; ?>" class="regular-text" /></td>
   </tr>
   <tr>
-    <th><label for="top_service<?= $i;?>_text">サービス<?= $i+1;?> テキスト</label></th>
+    <th><label for="top_services<?= $i;?>_text">サービス<?= $i+1;?> テキスト</label></th>
     <td colspan="2">
       <?php            
-        $content = get_option('top_service')[$i]['text'];
-        $editor_id = 'top_service'.$i.'_text';
+        $content = get_option('top_services')[$i]['text'];
+        $editor_id = 'top_services'.$i.'_text';
         $settings = array(
           'textarea_rows'	=> 5,
           'wpautop' => false,
-          'textarea_name' => 'top_service['.$i.'][text]'
+          'textarea_name' => 'top_services['.$i.'][text]'
         );
         wp_editor( $content, $editor_id, $settings );
       ?> 
     </td>
   </tr>
   <tr>
-    <th scope="row"><label for="top_service[<?= $i;?>][image]">サービス<?= $i+1;?> 画像</label></th>
-    <td><?php generate_upload_image_tag('top_service['.$i.'][image]', get_option('top_service')[$i]['image']);?></td>
+    <th scope="row"><label for="top_services[<?= $i;?>][image]">サービス<?= $i+1;?> 画像</label></th>
+    <td><?php generate_upload_image_tag('top_services['.$i.'][image]', get_option('top_services')[$i]['image']);?></td>
   </tr>
   <tr>
-    <th><label for="top_service[<?= $i;?>][link]">サービス<?= $i+1;?> URL</label></th>
-    <td colspan="2"><input name="top_service[<?= $i;?>][link]" type="text" id="top_service[<?= $i;?>][link]" value="<?= get_option('top_service')[$i]['link']; ?>" class="regular-text" /></td>
+    <th><label for="top_services[<?= $i;?>][link]">サービス<?= $i+1;?> URL</label></th>
+    <td colspan="2"><input name="top_services[<?= $i;?>][link]" type="text" id="top_services[<?= $i;?>][link]" value="<?= get_option('top_services')[$i]['link']; ?>" class="regular-text" /></td>
   </tr>
   <tr>
-    <th><label for="top_service[<?= $i;?>][link_text]">サービス<?= $i+1;?> リンクテキスト</label></th>
-    <td colspan="2"><input name="top_service[<?= $i;?>][link_text]" type="text" id="top_service[<?= $i;?>][link_text]" value="<?= get_option('top_service')[$i]['link_text']; ?>" class="regular-text" /></td>
+    <th><label for="top_services[<?= $i;?>][link_text]">サービス<?= $i+1;?> リンクテキスト</label></th>
+    <td colspan="2"><input name="top_services[<?= $i;?>][link_text]" type="text" id="top_services[<?= $i;?>][link_text]" value="<?= get_option('top_services')[$i]['link_text']; ?>" class="regular-text" /></td>
   </tr>
   <?php endfor; ?>
   <tr>
-		<th><label for="top_goods[en]">日用雑貨英語</label></th>
-		<td colspan="2"><input name="top_goods[en]" type="text" id="top_goods[en]" value="<?php form_option('top_goods')['en']; ?>" class="regular-text" /></td>
+		<th><label for="top_goods_en">日用雑貨英語</label></th>
+		<td colspan="2"><input name="top_goods_en" type="text" id="top_goods_en" value="<?php form_option('top_goods_en'); ?>" class="regular-text" /></td>
 	</tr>
   <tr>
-		<th><label for="top_goods[title]">日用雑貨タイトル</label></th>
-		<td colspan="2"><input name="top_goods[title]" type="text" id="top_goods[title]" value="<?php form_option('top_goods')['title']; ?>" class="regular-text" /></td>
+		<th><label for="top_goods_title">日用雑貨タイトル</label></th>
+		<td colspan="2"><input name="top_goods_title" type="text" id="top_goods_title" value="<?php form_option('top_goods_title'); ?>" class="regular-text" /></td>
 	</tr>
   <tr>
 		<th><label for="top_goods_text">日用雑貨テキスト</label></th>
 		<td colspan="2">
       <?php            
-        $content = get_option('top_goods')['text'];
+        $content = get_option('top_goods_text');
         $editor_id = 'top_goods_text';
         $settings = array(
           'textarea_rows'	=> 5,
           'wpautop' => false,
-          'textarea_name' => 'top_service[text]'
+          'textarea_name' => 'top_goods_text'
         );
         wp_editor( $content, $editor_id, $settings );
       ?> 
     </td>
 	</tr>
   <tr>
-		<th><label for="top_item[link]">日用雑貨リンク</label></th>
-		<td colspan="2"><input name="top_item[link]" type="text" id="top_item[link]" value="<?php form_option('top_item')['link']; ?>" class="regular-text" /></td>
+		<th><label for="top_goods_link">日用雑貨リンク</label></th>
+		<td colspan="2"><input name="top_goods_link" type="text" id="top_goods_link" value="<?php form_option('top_item_link'); ?>" class="regular-text" /></td>
 	</tr>
   <tr>
-		<th><label for="top_item_linktext">日用雑貨リンクテキスト</label></th>
-		<td colspan="2"><input name="top_item_linktext" type="text" id="top_item_linktext" value="<?php form_option('top_item_linktext'); ?>" class="regular-text" /></td>
+		<th><label for="top_goods_linktext">日用雑貨リンクテキスト</label></th>
+		<td colspan="2"><input name="top_goods_linktext" type="text" id="top_goods_linktext" value="<?php form_option('top_goods_linktext'); ?>" class="regular-text" /></td>
 	</tr>
   <tr>
-		<th><label for="top_item_en">エステ英語</label></th>
-		<td colspan="2"><input name="top_item_en" type="text" id="top_item_en" value="<?php form_option('top_item_en'); ?>" class="regular-text" /></td>
+		<th><label for="top_beauty_en">エステ英語</label></th>
+		<td colspan="2"><input name="top_beauty_en" type="text" id="top_beauty_en" value="<?php form_option('top_beauty_en'); ?>" class="regular-text" /></td>
 	</tr>
   <tr>
-		<th><label for="top_item_title">エステタイトル</label></th>
-		<td colspan="2"><input name="top_item_title" type="text" id="top_item_title" value="<?php form_option('top_item_title'); ?>" class="regular-text" /></td>
+		<th><label for="top_beauty_title">エステタイトル</label></th>
+		<td colspan="2"><input name="top_beauty_title" type="text" id="top_beauty_title" value="<?php form_option('top_beauty_title'); ?>" class="regular-text" /></td>
 	</tr>
   <tr>
-		<th><label for="top_item_text">エステテキスト</label></th>
+		<th><label for="top_beauty_text">エステテキスト</label></th>
 		<td colspan="2">
       <?php            
-        $content = get_option('top_item_text');
-        $editor_id = 'top_item_text';
+        $content = get_option('top_beauty_text');
+        $editor_id = 'top_beauty_text';
         $settings = array(
           'textarea_rows'	=> 5,
           'wpautop' => false
@@ -154,12 +154,12 @@ submit_button();
     </td>
 	</tr>
   <tr>
-		<th><label for="top_item_link">エステリンク</label></th>
-		<td colspan="2"><input name="top_item_link" type="text" id="top_item_link" value="<?php form_option('top_item_link'); ?>" class="regular-text" /></td>
+		<th><label for="top_beauty_link">エステリンク</label></th>
+		<td colspan="2"><input name="top_beauty_link" type="text" id="top_beauty_link" value="<?php form_option('top_beauty_link'); ?>" class="regular-text" /></td>
 	</tr>
   <tr>
-		<th><label for="top_item_linktext">エステリンクテキスト</label></th>
-		<td colspan="2"><input name="top_item_linktext" type="text" id="top_item_linktext" value="<?php form_option('top_item_linktext'); ?>" class="regular-text" /></td>
+		<th><label for="top_beauty_linktext">エステリンクテキスト</label></th>
+		<td colspan="2"><input name="top_beauty_linktext" type="text" id="top_beauty_linktext" value="<?php form_option('top_beauty_linktext'); ?>" class="regular-text" /></td>
 	</tr>
   <tr>
 		<th><label for="top_news_en">ニュース英語</label></th>
@@ -192,17 +192,28 @@ submit_button();
 <?php
 }
 function register_custom_setting() {
-	register_setting('top-settigns', 'top_fv_text');
-	register_setting('top-settigns', 'top_fv_image1');
-	register_setting('top-settigns', 'top_message_en');
-	register_setting('top-settigns', 'top_message_title');
-	register_setting('top-settigns', 'top_message_text');
-	register_setting('top-settigns', 'top_service_en');
-	register_setting('top-settigns', 'top_service_title');
-	register_setting('top-settigns', 'top_service');
-  register_setting('top-settigns', 'top_goods_en');
-	register_setting('top-settigns', 'top_goods_title');
-	register_setting('top-settigns', 'top_goods_text');
-	register_setting('top-settigns', 'top_goods_link');
-	register_setting('top-settigns', 'top_goods_linktext');
+	register_setting('top-settings', 'top_fv_text');
+	register_setting('top-settings', 'top_fv_image');
+	register_setting('top-settings', 'top_message_en');
+	register_setting('top-settings', 'top_message_title');
+	register_setting('top-settings', 'top_message_text');
+	register_setting('top-settings', 'top_service_en');
+	register_setting('top-settings', 'top_service_title');
+	register_setting('top-settings', 'top_services');
+  register_setting('top-settings', 'top_goods_en');
+	register_setting('top-settings', 'top_goods_title');
+	register_setting('top-settings', 'top_goods_text');
+	register_setting('top-settings', 'top_goods_link');
+	register_setting('top-settings', 'top_goods_linktext');
+	register_setting('top-settings', 'top_beauty_en');
+	register_setting('top-settings', 'top_beauty_title');
+	register_setting('top-settings', 'top_beauty_text');
+	register_setting('top-settings', 'top_beauty_link');
+	register_setting('top-settings', 'top_beauty_linktext');
+  register_setting('top-settings', 'top_news_en');
+  register_setting('top-settings', 'top_news_title');
+  register_setting('top-settings', 'top_company_en');
+  register_setting('top-settings', 'top_company_title');
+  register_setting('top-settings', 'top_contact_en');
+  register_setting('top-settings', 'top_contact_title');
 }

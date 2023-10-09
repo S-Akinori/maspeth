@@ -15,14 +15,14 @@
   padding: .5rem 1rem;
   margin: 2rem 0 1rem;
   font-size: 1.25rem;
-  background: g.$main_color2;
-  color: g.$main_color_cont2;
+  background: g.$main_color;
+  color: g.$main_color_cont;
 }
 .p-single h3 {
   padding: .5rem 1rem;
   margin: 2rem 0 1rem;
   font-size: 1.125rem;
-  border-bottom: 1px solid g.$main_color2;
+  border-bottom: 1px solid g.$main_color;
 }
 
 .p-single ul, .p-single ol {
@@ -32,5 +32,5 @@
 }
 
 .p-single ul li, .p-single ol li {
-  border-bottom: 1px solid g.$main_color2;
+  border-bottom: 1px solid g.$main_color;
 }

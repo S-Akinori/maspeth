@@ -4,21 +4,20 @@
   margin-bottom: 1rem;
 }
 .p-page h1 {
-  color: g.$main-color;
-  font-size: 2rem;
+  // color: g.$main-color;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .p-page h2 {
-  padding: .5rem 1rem;
   margin: 2rem 0 1rem;
   font-size: 1.25rem;
-  background: g.$main_color2;
-  color: g.$main_color_cont2;
 }
 .p-page h3 {
   padding: .5rem 1rem;
   margin: 2rem 0 1rem;
   font-size: 1.125rem;
-  border-bottom: 1px solid g.$main_color2;
+  border-bottom: 1px solid g.$main_color;
 }
 
 .p-page ul, .p-page ol {
@@ -28,5 +27,5 @@
 }
 
 .p-page ul li, .p-page ol li {
-  border-bottom: 1px solid g.$main_color2;
+  border-bottom: 1px solid g.$main_color;
 }

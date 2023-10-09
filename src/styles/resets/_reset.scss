@@ -3,7 +3,6 @@
   --base-color: #{g.$base_color};
   --base-color-cont: #{g.$base_color_cont};
   --main-color: #{g.$main_color};
-  --main-color-light: #{g.$main_color_light};
   --main-color-cont: #{g.$main_color_cont};
   --accent-color: #{g.$accent_color};
   --accent-color-cont: #{g.$accent_color_cont};
@@ -14,17 +13,19 @@
   --breakpoint-xl: 1280px;
 }
 body {
-  color: var(--base-color-cont);
-  line-height: 1.75;
+  color: var(--base-color);
+  background: var(--base-color-cont);
+  line-height: 2;
   letter-spacing: 0.1em;
   overflow-x: hidden;
   max-width: 100%;
-  font-family: "Source Han Serif", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
+  font-weight: 500;
 }
 main {
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   min-height: 100vh;
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 video {
   width: 100%;
@@ -54,7 +55,7 @@ h3 {
   height: 1px;
 }
 a {
-  color: var(--base-color-cont);
+  color: var(--base-color);
   transition: 300ms;
 }
 a:hover {

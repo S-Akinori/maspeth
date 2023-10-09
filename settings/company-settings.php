@@ -21,7 +21,7 @@
       do_settings_sections('company_settings_group');
       submit_button();
     ?>
-    <?php for($i=0; $i<2; $i++) : ?>
+    <?php for($i=0; $i<1; $i++) : ?>
     <h2>会社情報<?= $i+1 ?></h2>
     <table class="form-table setting-table">
       <tr>
@@ -119,7 +119,7 @@
 <?php
   }
   function register_company_setting() {
-    for($i=0; $i<2; $i++) {
+    for($i=0; $i<1; $i++) {
       register_setting("company_settings_group", "company{$i}_name");
       register_setting("company_settings_group", "company{$i}_logo");
       register_setting("company_settings_group", "company{$i}_CEO_image");

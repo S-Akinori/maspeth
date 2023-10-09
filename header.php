@@ -32,50 +32,27 @@
 </head>
 <body>
   <header class="header">
-    <div class="flex justify-between items-center">
-      <div class="c-logo"><a href="<?= home_url(); ?>"><img src="<?= get_option('company0_logo'); ?>" alt="株式会社NEXUS"></a></div>
-      <div class="flex items-center">
-        <div class="hidden lg:block">
-          <nav>
-            <ul class="flex">
-              <li class="px-2 text-sm"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?>" href="<?= is_front_page() ? '#topMessage' : home_url("#topMessage"); ?>">わたしたちについて</a></li>
-              <li class="px-2 text-sm"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?>" href="<?= is_front_page() ? '#topService' : home_url("#topService"); ?>">サービス</a></li>
-              <li class="px-2 text-sm"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?>" href="<?= is_front_page() ? '#topGoods' : home_url("#topGoods"); ?>">日用雑貨</a></li>
-              <li class="px-2 text-sm"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?>" href="<?= is_front_page() ? '#topBeauty' : home_url("#topBeauty"); ?>">エステ事業</a></li>
-              <li class="px-2 text-sm"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?>" href="<?= is_front_page() ? '#topNews' : home_url("#topNews"); ?>">ニュース</a></li>
-              <li class="px-2 text-sm"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?>" href="<?= is_front_page() ? '#topCompany' : home_url("#topCompany"); ?>">会社情報</a></li>
-            </ul>
-          </nav>
-        </div>
-        <a href="<?= is_front_page() ? '#topContact' : home_url("#topContact"); ?>" class="c-button c-button--main-cont text-sm <?= is_front_page() ? 'js-anchorLink' : ''; ?>">お問い合わせ</a>
-        <div class="lg:hidden pl-2">
-          <button class="js-menu-button flex items-center justify-center">
-            <span class="material-icons">
-              menu
-            </span>
-          </button>
+    <div class="container mx-auto">
+      <div class="flex justify-between items-center">
+        <div class="c-logo"><a href="<?= home_url(); ?>"><img src="<?= get_option('company0_logo'); ?>" alt="株式会社NEXUS"></a></div>
+        <div class="flex items-center">
+          <button class="js-menu-button c-nav-icon"></button>
         </div>
       </div>
     </div>
   </header>
   <div id="jsNav" class="l-nav-container">
     <div class="relative">
-      <button class="js-menu-button absolute right-0 top-0 flex items-center justify-center">
-        <span class="material-icons text-main-cont">close</span>
-      </button>
-      <nav class="mb-4">
+      <button class="js-menu-button c-nav-icon c-nav-icon--close ml-auto mt-8 mr-8"></button>
+      <nav class="mt-24">
         <ul>
-          <li class="px-2 text-sm text-center"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?> js-menu-button" href="<?= is_front_page() ? '#topMessage' : home_url("#topMessage"); ?>">わたしたちについて</a></li>
-          <li class="px-2 text-sm text-center"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?> js-menu-button" href="<?= is_front_page() ? '#topService' : home_url("#topService"); ?>">サービス</a></li>
-          <li class="px-2 text-sm text-center"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?> js-menu-button" href="<?= is_front_page() ? '#topGoods' : home_url("#topGoods"); ?>">日用雑貨</a></li>
-          <li class="px-2 text-sm text-center"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?> js-menu-button" href="<?= is_front_page() ? '#topBeauty' : home_url("#topBeauty"); ?>">エステ事業</a></li>
-          <li class="px-2 text-sm text-center"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?> js-menu-button" href="<?= is_front_page() ? '#topNews' : home_url("#topNews"); ?>">ニュース</a></li>
-          <li class="px-2 text-sm text-center"><a class="<?= is_front_page() ? 'js-anchorLink' : ''; ?> js-menu-button" href="<?= is_front_page() ? '#topCompany' : home_url("#topCompany"); ?>">会社情報</a></li>
+          <li class="p-4"><a class="js-menu-button" href="">About</a></li>
+          <li class="p-4"><a class="js-menu-button" href="">Service</a></li>
+          <li class="p-4"><a class="js-menu-button" href="">Works</a></li>
+          <li class="p-4"><a class="js-menu-button" href="">News</a></li>
+          <li class="p-4"><a class="js-menu-button" href="">Contact</a></li>
         </ul>
       </nav>
-      <div class="text-center">
-        <a href="<?= is_front_page() ? '#topContact' : home_url("#topContact"); ?>" class="c-button c-button--main-cont <?= is_front_page() ? 'js-anchorLink' : ''; ?> js-menu-button">お問い合わせ</a>
-      </div>
     </div>
   </div>
   <main>
